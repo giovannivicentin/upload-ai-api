@@ -23,3 +23,13 @@ Content-Type: application/json
 {
     "prompt": "bandeirantes, esporte"
 }
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "17e45e53-18f8-4d6f-8d6a-7aae1627ecf8",
+  "temperature": 0.5,
+  "template": "Gere um resumo da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
